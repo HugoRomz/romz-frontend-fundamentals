@@ -12,7 +12,8 @@ const finalProjects = PROJECTS.filter((project) => !project.hidden)
 
 <div class="grid gap-8 mb-6 lg:mb-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full mx-auto">
     {
-        finalProjects.map((project, index) => {
+        finalProjects.map((project, reversedIndex) => {
+            const index = finalProjects.length - reversedIndex - 1
             const num = `${index + 1}`.padStart(2, "0")
             return <CardProject project={project} num={num} />
         })

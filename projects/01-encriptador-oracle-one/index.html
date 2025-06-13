@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador ONE - G-7 - Rafael Rosales</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header-contenido">
+          <img class="logo" src="./assets/logo.svg" alt="Logo del creador" />
+          <h1 class="titulo-principal">Encriptador Oracle ONE</h1>
+        </div>
+      </header>
+      <main class="contenedor-principal">
+        <section class="seccion-entrada">
+          <textarea
+            id="input-entrada"
+            class="input-entrada"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+          <div class="mensaje-advertencia">
+            <img
+              src="./assets/icons/info.svg"
+              alt="Advertencia"
+              class="icono-advertencia"
+            />
+            <p>Solo letras minúsculas y sin acentos</p>
+          </div>
+        </section>
+        <section class="seccion-botones">
+          <button
+            type="button"
+            id="btn-encriptar"
+            class="btn btn-encriptar"
+            onclick="encriptarTexto()"
+          >
+            Encriptar
+          </button>
+          <button
+            type="button"
+            id="btn-desencriptar"
+            class="btn btn-desencriptar"
+            onclick="desencriptarTexto()"
+          >
+            Desencriptar
+          </button>
+          <button type="button" class="btn btn-limpiar" onclick="limpiarTexto()">
+            Limpiar
+        </section>
+        <section class="seccion-resultado">
+          <div class="resultado-vacio" id="resultado-vacio">
+            <img src="./assets/Muñeco.svg" alt="Muñeco" />
+            <strong>Ningún mensaje fue encontrado</strong>
+            <p>Ingrese el texto que desees encriptar o desencriptar.</p>
+          </div>
+          <div class="resultado" id="resultado">
+            <p id="texto-respuesta">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              voluptas nulla pariatur?
+            </p>
+            <button
+              type="button"
+              class="btn btn-copiar"
+              onclick="copiarTexto()"
+            >
+              Copiar
+            </button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>
+          Creado por
+          <a href="https://www.linkedin.com/in/hugorosme"> Rafael Rosales </a>
+        </p>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

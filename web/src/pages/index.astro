@@ -1,18 +1,14 @@
 ---
 
 import Layout from '../layouts/Layout.astro';
+import Header from "../components/Header.astro"
+import Projects from '../components/Projects.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-    <header class="flex justify-center flex-col max-w-3xl mx-auto items-center pt-12 ">
-        <div class="relative z-10 mx-auto max-w-5xl text-center">
-            <h1 class="mb-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                Projects with <span class="text-html">HTML</span>, <span class="text-css">CSS</span> &{" "}
-                <span class="text-javascript">JavaScript</span>    
-            </h1>
-        </div>
-    </header>
+<Layout title='Projects with HTML, CSS & JavaScript | ROMZ'>
+    <Header />
+    <Projects />
 </Layout>

@@ -11,6 +11,32 @@ const finalProjects = PROJECTS.filter((project) => !project.hidden)
 ---
 
 <div class="grid gap-8 mb-6 lg:mb-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full mx-auto max-w-7xl">
+
+<article
+    class="group relative overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1.5 flex flex-col h-full">
+    <div class="flex h-8 items-center gap-1.5 border-b border-gray-200 bg-gray-50 px-3">
+      <div class="h-2.5 w-2.5 rounded-full bg-html"></div>
+      <div class="h-2.5 w-2.5 rounded-full bg-javascript"></div>
+      <div class="h-2.5 w-2.5 rounded-full bg-css"></div>
+      <div class="ml-2 h-4 w-full max-w-[140px] rounded-sm bg-gray-200 text-xs"></div>
+    </div>
+    <div class="p-4 flex flex-col flex-grow ">
+      <div class="text-center mt-20 items-center">
+        <h3 class="text-4xl font-bold text-gray-900 mb-1">501</h3>
+        <h4 class="text-lg font-semibold text-gray-700 mb-2">Desarrollando nuevos proyectos</h4>
+
+         <p class="text-sm text-gray-600 mt-2 ">Próximamente ...
+        </p>
+      </div>
+      <div class="mt-auto flex items-center justify-between">
+        <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+          <span class="w-2 h-2 bg-purple-400 rounded-full animate-pulse mr-1"></span>
+          Próximamente
+        </span>
+        <code class="text-xs text-gray-500 font-mono bg-gray-100 px-2 py-1 rounded">501</code>
+      </div>
+    </div>
+  </article>
     {
         finalProjects.map((project, reversedIndex) => {
             const index = finalProjects.length - reversedIndex - 1
